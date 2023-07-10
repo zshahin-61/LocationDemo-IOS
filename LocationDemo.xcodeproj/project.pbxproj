@@ -7,19 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37C00CA727305083005E31D3 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C00CA627305083005E31D3 /* LocationHelper.swift */; };
 		7408573E26CEEB6500B30049 /* LocationDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408573D26CEEB6500B30049 /* LocationDemoApp.swift */; };
 		7408574026CEEB6500B30049 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408573F26CEEB6500B30049 /* ContentView.swift */; };
 		7408574226CEEB6800B30049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7408574126CEEB6800B30049 /* Assets.xcassets */; };
 		7408574526CEEB6800B30049 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7408574426CEEB6800B30049 /* Preview Assets.xcassets */; };
+		7408574D26CF0AD100B30049 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408574C26CF0AD100B30049 /* MapView.swift */; };
+		7408574F26CF0AE300B30049 /* ForwardGeoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408574E26CF0AE300B30049 /* ForwardGeoView.swift */; };
+		7408575126CF0AF100B30049 /* ReverseGeoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408575026CF0AF100B30049 /* ReverseGeoView.swift */; };
+		7408575326CF138000B30049 /* CustomViewModifers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7408575226CF138000B30049 /* CustomViewModifers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37C00CA627305083005E31D3 /* LocationHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
 		7408573A26CEEB6500B30049 /* LocationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7408573D26CEEB6500B30049 /* LocationDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDemoApp.swift; sourceTree = "<group>"; };
 		7408573F26CEEB6500B30049 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7408574126CEEB6800B30049 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7408574426CEEB6800B30049 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7408574626CEEB6800B30049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7408574C26CF0AD100B30049 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		7408574E26CF0AE300B30049 /* ForwardGeoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForwardGeoView.swift; sourceTree = "<group>"; };
+		7408575026CF0AF100B30049 /* ReverseGeoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseGeoView.swift; sourceTree = "<group>"; };
+		7408575226CF138000B30049 /* CustomViewModifers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewModifers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37C00CA52730505D005E31D3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37C00CA627305083005E31D3 /* LocationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		37C00CA827305097005E31D3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7408573F26CEEB6500B30049 /* ContentView.swift */,
+				7408574C26CF0AD100B30049 /* MapView.swift */,
+				7408574E26CF0AE300B30049 /* ForwardGeoView.swift */,
+				7408575026CF0AF100B30049 /* ReverseGeoView.swift */,
+				7408575226CF138000B30049 /* CustomViewModifers.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7408573126CEEB6500B30049 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +82,11 @@
 		7408573C26CEEB6500B30049 /* LocationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				37C00CA827305097005E31D3 /* Views */,
+				37C00CA52730505D005E31D3 /* Helpers */,
 				7408573D26CEEB6500B30049 /* LocationDemoApp.swift */,
-				7408573F26CEEB6500B30049 /* ContentView.swift */,
-				7408574126CEEB6800B30049 /* Assets.xcassets */,
 				7408574626CEEB6800B30049 /* Info.plist */,
+				7408574126CEEB6800B30049 /* Assets.xcassets */,
 				7408574326CEEB6800B30049 /* Preview Content */,
 			);
 			path = LocationDemo;
@@ -138,7 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7408575326CF138000B30049 /* CustomViewModifers.swift in Sources */,
 				7408574026CEEB6500B30049 /* ContentView.swift in Sources */,
+				7408575126CF0AF100B30049 /* ReverseGeoView.swift in Sources */,
+				7408574D26CF0AD100B30049 /* MapView.swift in Sources */,
+				7408574F26CF0AE300B30049 /* ForwardGeoView.swift in Sources */,
+				37C00CA727305083005E31D3 /* LocationHelper.swift in Sources */,
 				7408573E26CEEB6500B30049 /* LocationDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,15 +305,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocationDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 79338HDYZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jk.LocationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = home.LocationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,15 +327,15 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"LocationDemo/Preview Content\"";
-				DEVELOPMENT_TEAM = 79338HDYZM;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jk.LocationDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = home.LocationDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
